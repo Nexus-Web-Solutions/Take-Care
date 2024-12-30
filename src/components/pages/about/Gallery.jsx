@@ -6,7 +6,8 @@ import Collage from "./Collage";
 export function Gallery() {
    return (
       <div className="h-full w-full overflow-auto ">
-<Collage />         <div className="flex items-end justify-center pb-12">
+         <Collage />{" "}
+         <div className="flex items-end justify-center pb-12">
             <InView
                viewOptions={{ once: true, margin: "0px 0px -250px 0px" }}
                variants={{
@@ -21,15 +22,17 @@ export function Gallery() {
                   },
                }}
             >
-               <div className="flex items-end justify-center pb-12 pt-40 text-5xl font-bold text-take_care_primary">Gallery</div>
-               <div className="columns-2 gap-4 px-8 sm:columns-3 pt-40">
+               <div className="flex items-end justify-center pb-12 pt-40 text-5xl font-bold text-take_care_primary">
+                  Gallery
+               </div>
+               <div className="columns-2 gap-4 px-8 sm:columns-3 ">
                   {[
                      "/images/about-us.jpg",
                      "/images/about-us-2.jpg",
                      "/images/about-us-3.jpg",
                      "/images/about-us-4.jpg",
                      "/images/hero.jpg",
-                     
+
                      "/images/about-us.jpg",
                      "/images/about-us-2.jpg",
                      "/images/about-us-3.jpg",
