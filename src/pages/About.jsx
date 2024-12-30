@@ -1,10 +1,10 @@
-import Collage from "@/components/pages/about/Collage";
+import { Gallery } from "@/components/pages/about/Gallery";
 import React from "react";
 
 const About = () => {
    return (
       <div>
-         <Collage />
+        <Gallery />
       </div>
    );
 };
