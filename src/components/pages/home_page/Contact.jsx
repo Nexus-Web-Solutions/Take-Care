@@ -1,66 +1,32 @@
 import React from "react";
-const RegisterServices = () => {
-  return (
-    <div className="flex flex-col md:flex-row items-center justify-center p-8 space-y-8 md:space-y-0 md:space-x-8">
-      {/* Image Section */}
-      <div className="flex-shrink-0">
-        <img
-          src={"/images/Home(3).jpg"}
-          alt="Healthcare"
-          className="rounded-lg shadow-lg"
-        />
-      </div>
 
-      {/* Form Section */}
-      <div className="bg-white shadow-md rounded-lg p-6 w-full max-w-md">
-        <h2 className="text-2xl font-bold mb-4 text-gray-800">Register Our <span className="text-blue-500">Services</span></h2>
-        <form className="space-y-4 px-14">
-          <div>
-            <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>
-            <input
-              type="text"
-              id="name"
-              className="mt-1 block w-full p-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"
-              placeholder="Your Name"
-            />
-          </div>
-          <div>
-            <label htmlFor="surname" className="block text-sm font-medium text-gray-700">Surname</label>
-            <input
-              type="text"
-              id="surname"
-              className="mt-1 block w-full p-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"
-              placeholder="Your Surname"
-            />
-          </div>
-          <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
-            <input
-              type="email"
-              id="email"
-              className="mt-1 block w-full p-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"
-              placeholder="Your Email"
-            />
-          </div>
-          <div>
-            <label htmlFor="message" className="block text-sm font-medium text-gray-700">Message</label>
-            <textarea
-              id="message"
-              className="mt-1 block w-full p-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"
-              placeholder="Your Message"
-              rows="3"
-            ></textarea>
-          </div>
-          <button
-            type="submit"
-            className="w-full bg-black text-white py-2 px-4 rounded-lg shadow-md hover:bg-gray-800"
-          >
-            Submit
-          </button>
-        </form>
+const RegisterServices = () => {
+   return (
+      <div className="container mx-auto p-4 md:p-10">
+         <div className="flex flex-col md:flex-row items-center justify-between gap-8 max-w-7xl mx-auto">
+            {/* Image - Right Side, Only visible on md and above */}
+            <div className="hidden md:block w-full md:w-1/2">
+               <img
+                  src="/images/Home(3).jpg"
+                  alt="Healthcare"
+                  className="rounded-lg shadow-lg w-full h-auto object-cover"
+               />
+            </div>
+            {/* Form Container  */}
+            <div className="w-full md:w-1/2">
+               <div className="relative w-full overflow-hidden pt-4">
+                  <iframe
+                     src="https://docs.google.com/forms/d/e/1FAIpQLSc7p99Reif_3XjbwVW94wT6eYwTeInksfkYzhJaqA_UVILudg/viewform?embedded=true"
+                     className="w-full h-[600px] border-0"
+                     title="Registration Form"
+                  >
+                     Loading…
+                  </iframe>
+               </div>
+            </div>
+         </div>
       </div>
-    </div>
-  );
+   );
 };
 
 export default RegisterServices;
