@@ -4,6 +4,7 @@ import "./index.css";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import About from "./pages/About";
+import Homepage from "./pages/Homepage";
 
 createRoot(document.getElementById("root")).render(
    <StrictMode>
