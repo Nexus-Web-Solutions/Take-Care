@@ -1,12 +1,11 @@
 import React from "react";
-import image from "../../../../public/images/Home.jpg"
 const About = () => {
   return (
     <div className="flex flex-wrap md:flex-nowrap items-center p-6 md:p-16 gap-6 bg-gray-100">
       {/* Image Section */}
       <div className="relative w-full  rounded-xl md:w-1/2">
         <img
-          src={image}
+          src={"/images/Home.jpg"}
           alt="About"
           className="w-full h-auto rounded-lg md:rounded-none md:shadow-lg transition-all duration-300 ease-in-out"
         />

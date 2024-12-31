@@ -15,7 +15,7 @@ const Navbar = () => {
                <a href="/" className="hover:text-take_care_primary">
                   Home
                </a>
-               <a href="/about" className="hover:text-take_care_primary">
+               <a href="/about-us" className="hover:text-take_care_primary">
                   About Us
                </a>
                <a href="/contact" className="hover:text-take_care_primary">
@@ -41,7 +41,7 @@ const Navbar = () => {
                      Home
                   </a>
                   <a
-                     href="/about"
+                     href="/about-us"
                      className="hover:text-take_care_primary w-full pt-2"
                   >
                      About Us

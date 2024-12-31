@@ -1,12 +1,11 @@
 import React from "react";
-import image from "../../../../public/images/Home(3).jpg";
 const RegisterServices = () => {
   return (
     <div className="flex flex-col md:flex-row items-center justify-center p-8 space-y-8 md:space-y-0 md:space-x-8">
       {/* Image Section */}
       <div className="flex-shrink-0">
         <img
-          src={image}
+          src={"/images/Home(3).jpg"}
           alt="Healthcare"
           className="rounded-lg shadow-lg"
         />

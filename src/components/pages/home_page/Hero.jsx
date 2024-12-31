@@ -1,5 +1,4 @@
 import React from "react";
-import doctorImage from "../../../../public/images/Home(0).png";
 
 const HeroSection = () => {
   return (
@@ -32,7 +31,7 @@ const HeroSection = () => {
         {/* Right Image Section */}
         <div className="flex justify-center px-4 sm:px-2">
           <img
-            src={doctorImage}
+            src={"/images/Home(0).png"}
             alt="Doctors"
             className="rounded-xl shadow-5xl w-full sm:w-3/4 lg:w-auto max-w-sm lg:max-w-none ps-3"
           />
