@@ -1,6 +1,7 @@
 import { Menu } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
    const [isOpen, setIsOpen] = useState(false);
@@ -12,18 +13,46 @@ const Navbar = () => {
                Take Care
             </div>
             <div className="hidden md:flex space-x-10">
-               <a href="/" className="hover:text-take_care_primary">
+               <NavLink
+                  to="/"
+                  className={({ isActive }) =>
+                     `hover:text-take_care_primary ${
+                        isActive && "text-take_care_primary"
+                     }`
+                  }
+               >
                   Home
-               </a>
-               <a href="/about-us" className="hover:text-take_care_primary">
+               </NavLink>
+               <NavLink
+                  to="/about-us"
+                  className={({ isActive }) =>
+                     `hover:text-take_care_primary ${
+                        isActive && "text-take_care_primary"
+                     }`
+                  }
+               >
                   About Us
-               </a>
-               <a href="/contact" className="hover:text-take_care_primary">
+               </NavLink>
+               <NavLink
+                  to="/services"
+                  className={({ isActive }) =>
+                     `hover:text-take_care_primary ${
+                        isActive && "text-take_care_primary"
+                     }`
+                  }
+               >
                   Services
-               </a>
-               <a href="/services" className="hover:text-take_care_primary">
+               </NavLink>
+               <NavLink
+                  to="/careers"
+                  className={({ isActive }) =>
+                     `hover:text-take_care_primary ${
+                        isActive && "text-take_care_primary"
+                     }`
+                  }
+               >
                   Careers
-               </a>
+               </NavLink>
             </div>
             <div className="hidden md:flex ">
                <Button>Contact Us</Button>
@@ -37,27 +66,46 @@ const Navbar = () => {
          {isOpen && (
             <div className="mt-4 md:hidden text-center items-center">
                <div className="flex flex-col  space-y-2 divide-y divide-gray-400">
-                  <a href="/" className="hover:text-take_care_primary w-full">
+                  <NavLink
+                     to="/"
+                     className={({ isActive }) =>
+                        `hover:text-take_care_primary w-full ${
+                           isActive && "text-take_care_primary"
+                        }`
+                     }
+                  >
                      Home
-                  </a>
-                  <a
-                     href="/about-us"
-                     className="hover:text-take_care_primary w-full pt-2"
+                  </NavLink>
+                  <NavLink
+                     to="/about-us"
+                     className={({ isActive }) =>
+                        `hover:text-take_care_primary w-full pt-2 ${
+                           isActive && "text-take_care_primary"
+                        }`
+                     }
                   >
                      About Us
-                  </a>
-                  <a
-                     href="/contact"
-                     className="hover:text-take_care_primary w-full pt-2"
+                  </NavLink>
+                  <NavLink
+                     to="/contact"
+                     className={({ isActive }) =>
+                        `hover:text-take_care_primary w-full pt-2 ${
+                           isActive && "text-take_care_primary"
+                        }`
+                     }
                   >
-                     Contact Us
-                  </a>
-                  <a
-                     href="/services"
-                     className="hover:text-take_care_primary w-full pt-2"
+                     Careers
+                  </NavLink>
+                  <NavLink
+                     to="/careers"
+                     className={({ isActive }) =>
+                        `hover:text-take_care_primary w-full pt-2 ${
+                           isActive && "text-take_care_primary"
+                        }`
+                     }
                   >
                      Services
-                  </a>
+                  </NavLink>
                </div>
                <div className="pt-2">
                   <Button>Contact Us</Button>

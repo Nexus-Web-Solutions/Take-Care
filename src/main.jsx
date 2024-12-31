@@ -7,21 +7,42 @@ import About from "./pages/About";
 import Homepage from "./pages/Homepage";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Careers from "./pages/Careers";
 
+// The navbar component uses the NavLink component from react-router-dom, that should be wrapped in a RouterProvider component.
+// That's why we are using calling the navbar here.
 const router = createBrowserRouter([
    {
       path: "/",
-      element: <Homepage />,
+      element: (
+         <div>
+            <Navbar />
+            <Homepage />
+         </div>
+      ),
    },
    {
       path: "/about-us",
-      element: <About />,
+      element: (
+         <div>
+            <Navbar />
+            <About />
+         </div>
+      ),
+   },
+   {
+      path: "/careers",
+      element: (
+         <div>
+            <Navbar />
+            <Careers />
+         </div>
+      ),
    },
 ]);
 
 createRoot(document.getElementById("root")).render(
    <StrictMode>
-      <Navbar />
       <RouterProvider router={router} />
       <Footer />
    </StrictMode>
