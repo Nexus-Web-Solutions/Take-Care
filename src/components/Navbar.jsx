@@ -87,7 +87,7 @@ const Navbar = () => {
                      About Us
                   </NavLink>
                   <NavLink
-                     to="/contact"
+                     to="/careers"
                      className={({ isActive }) =>
                         `hover:text-take_care_primary w-full pt-2 ${
                            isActive && "text-take_care_primary"
@@ -97,7 +97,7 @@ const Navbar = () => {
                      Careers
                   </NavLink>
                   <NavLink
-                     to="/careers"
+                     to="/services"
                      className={({ isActive }) =>
                         `hover:text-take_care_primary w-full pt-2 ${
                            isActive && "text-take_care_primary"
