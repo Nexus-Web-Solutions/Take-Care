@@ -3,6 +3,7 @@ import Hero from '../components/pages/home_page/Hero'
 import About from '../components/pages/home_page/About'
 import Services from '../components/pages/home_page/Services'
 import Contact from '../components/pages/home_page/Contact'
+import Collage from '@/components/pages/about/Collage'
 
 const Homepage = () => {
   return (
@@ -11,7 +12,7 @@ const Homepage = () => {
         <Hero/>
       </section>
       <section id='About_US'>
-        <About/>
+        <Collage bgColor="white" />
       </section>
       <section id='Services'>
         <Services/>
