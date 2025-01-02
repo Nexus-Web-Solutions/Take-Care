@@ -8,6 +8,7 @@ import Homepage from "./pages/Homepage";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Careers from "./pages/Careers";
+import Services from "./pages/Services";
 
 // The navbar component uses the NavLink component from react-router-dom, that should be wrapped in a RouterProvider component.
 // That's why we are using calling the navbar here.
@@ -36,6 +37,15 @@ const router = createBrowserRouter([
          <div>
             <Navbar />
             <Careers />
+         </div>
+      ),
+   },
+   {
+      path: "/services",
+      element: (
+         <div>
+            <Navbar />
+            <Services />
          </div>
       ),
    },
