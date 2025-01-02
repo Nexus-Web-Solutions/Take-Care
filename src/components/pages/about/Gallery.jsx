@@ -1,7 +1,7 @@
 "use client";
 import { InView } from "@/components/ui/in-view";
 import { motion } from "motion/react";
-import Collage from "./Collage";
+import Collage from "../global/Collage";
 
 export function Gallery() {
    return (

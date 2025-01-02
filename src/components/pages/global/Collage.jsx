@@ -1,6 +1,6 @@
-const Collage = () => {
-  return (
-    <div className="px-10 py-10 bg-take_care_bg">
+const Collage = ({bgColor}) => {
+   return (
+      <div className={`px-10 py-10 bg-take_care_bg  `} style={{backgroundColor: bgColor}}>
          <div className="flex items-center justify-center rounded-lg text-center xl:p-20">
             <div className="flex flex-row gap-4 items-center justify-center lg:pt-10">
                <div className="relative hidden w-1/2 p-5 xl:block  md:blur-lg xl:blur-none">
@@ -60,7 +60,7 @@ const Collage = () => {
             </div>
          </div>
       </div>
-  )
-}
+   );
+};
 
-export default Collage
+export default Collage;
