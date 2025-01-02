@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 
 const Card = ({ title, description, duration, imageUrl }) => (
    <div
-      className="bg-white rounded-lg shadow-lg overflow-hidden"
+      className="bg-white rounded-lg shadow-lg max-w-[500px] overflow-hidden"
       data-aos="fade-up"
    >
       <img
@@ -13,7 +13,7 @@ const Card = ({ title, description, duration, imageUrl }) => (
          className="h-40 w-full object-cover"
       />
       <div className="p-4">
-         <h3 className="text-lg lg:text-3xl font-bold text-gray-800">
+         <h3 className="text-lg lg:text-2xl font-bold text-gray-800">
             {title}
          </h3>
          <p className="text-sm lg:text-xl text-gray-600 mt-2">{description}</p>
@@ -61,11 +61,11 @@ const HomeNursingServices = () => {
 
    return (
       <div className="bg-blue-50 px-10 py-10">
-         <div className="">
+         <div className=" flex flex-col items-center">
             <h2 className="text-5xl font-bold text-blue-600 text-center mb-16">
                Our Services
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2  gap-6 ">
+            <div className="grid grid-cols-1 sm:grid-cols-2  gap-6 gap-x-28 ">
                {services.map((service, index) => (
                   <Card
                      key={index}
