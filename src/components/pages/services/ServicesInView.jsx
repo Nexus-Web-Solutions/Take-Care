@@ -22,18 +22,14 @@ const ServicesInView = ({ title, description, image, imgLeft }) => {
          viewOptions={{ margin: "0px 0px -350px 0px" }}
       >
          <div className="p-4 grid grid-cols-1 lg:grid-cols-2 bg-take_care_bg gap-8">
-            <div
-               className={`order-${imgLeft ? "1" : "2"} flex items-center`}
-            >
+            <div className={`${imgLeft ? "order-1" : "order-2"} flex items-center`}>
                <img
                   src={image}
                   alt="Athletics"
                   className="xl:max-w-[900px] w-full rounded-lg"
                />
             </div>
-            <div
-               className={`order-${imgLeft ? "2" : "1"} flex items-center`}
-            >
+            <div className={`${imgLeft ? "order-2" : "order-1"} flex items-center`}>
                <div>
                   <p className="font-medium text-take_care_primary lg:text-5xl text-4xl text-left">
                      {title}
