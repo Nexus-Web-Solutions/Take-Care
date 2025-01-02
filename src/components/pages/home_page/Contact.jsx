@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
    return (
-      <div className="md:grid md:grid-cols-2 px-10 py-10">
+      <div className="md:grid md:grid-cols-2 px-10 py-20">
          <div className="md:block hidden bg-red-100 ">
             <img
                src="/images/Home(3).jpg"

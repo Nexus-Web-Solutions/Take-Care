@@ -60,7 +60,7 @@ const HomeNursingServices = () => {
    ];
 
    return (
-      <div className="bg-blue-50 px-10 py-10">
+      <div className="bg-blue-50 px-10 py-20">
          <div className=" flex flex-col items-center">
             <h2 className="text-5xl font-bold text-blue-600 text-center mb-16">
                Our Services
