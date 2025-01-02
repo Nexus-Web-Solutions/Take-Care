@@ -20,15 +20,15 @@ const About = () => {
 
       {/* Text Section */}
       <div className="w-full md:w-1/2 space-y-4 text-center md:text-left">
-        <h2 className="text-3xl font-bold text-gray-800 mb-5"><span>About </span><span className="text-blue-600">Us</span></h2>
-        <p className="text-lg font-semibold text-gray-900 mt-3">
+        <h2 className="text-3xl font-bold text-gray-800 px-4"><span>About </span><span className="text-blue-600">Us</span></h2>
+        <p className="text-lg font-semibold text-gray-900 px-4">
             We are a team of medical professionals dedicated to providing the best possible care for our patients. Our
             team is comprised of experienced doctors, nurses, and other healthcare specialists who are passionate about
             delivering exceptional patient care.
         </p>
         <a
           href="#"
-          className="inline-block mt-4 text-blue-600 hover:underline items-center"
+          className="inline-block px-4 text-blue-600 hover:underline items-center"
         >
           Learn More <span className="ml-2">→</span>
         </a>
