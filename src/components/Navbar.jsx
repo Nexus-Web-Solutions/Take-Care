@@ -1,10 +1,15 @@
 import { Menu } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate,  } from "react-router-dom";
 
 const Navbar = () => {
    const [isOpen, setIsOpen] = useState(false);
+   const navigate = useNavigate();
+
+   const handleContactUsClick = () => {
+      navigate("/#contact");
+   };
 
    return (
       <nav className="bg-white py-4 font-semibold  mx-10">
@@ -55,7 +60,7 @@ const Navbar = () => {
                </NavLink>
             </div>
             <div className="hidden md:flex ">
-               <Button>Contact Us</Button>
+               <Button onClick={handleContactUsClick}>Contact Us</Button>
             </div>
             <div className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
                <Menu className="hover:cursor-pointer" />
