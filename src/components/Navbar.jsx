@@ -9,6 +9,11 @@ const Navbar = () => {
 
    const handleContactUsClick = () => {
       navigate("/#contact");
+
+      const section = document.getElementById("contact");
+      if (section) {
+         section.scrollIntoView({ behavior: "smooth" });
+      }
    };
 
    return (
@@ -113,7 +118,7 @@ const Navbar = () => {
                   </NavLink>
                </div>
                <div className="pt-2">
-                  <Button>Contact Us</Button>
+                  <Button onClick={handleContactUsClick}>Contact Us</Button>
                </div>
             </div>
          )}
