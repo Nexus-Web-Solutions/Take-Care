@@ -1,14 +1,17 @@
-const Collage = ({bgColor}) => {
+const Collage = ({ bgColor }) => {
    return (
-      <div className={`px-10 py-10 bg-take_care_bg  `} style={{backgroundColor: bgColor}}>
+      <div
+         className={`sm:px-10 px-4 lg:py-10 bg-take_care_bg  `}
+         style={{ backgroundColor: bgColor }}
+      >
          <div className="flex items-center justify-center rounded-lg text-center xl:p-20">
-            <div className="flex flex-row gap-4 items-center justify-center lg:pt-10">
-               <div className="relative hidden w-1/2 p-5 xl:block  md:blur-lg xl:blur-none">
+            <div className="flex flex-col xl:flex-row gap-4 items-center justify-center lg:pt-10 ">
+               <div className="relative xl:w-1/2 p-5 xl:block scale-75 xl:scale-100  sm:block hidden ">
                   {/* Middle Image */}
                   <img
                      src="/images/about-us.jpg"
                      alt="About Us"
-                     className="mb-5 rounded-lg shadow-lg"
+                     className="mb-5 rounded-lg shadow-lg "
                   />
                   {/* Bottom Right image */}
                   <img
@@ -20,7 +23,7 @@ const Collage = ({bgColor}) => {
                   <img
                      src="/images/about-us-2.jpg"
                      alt="About Us"
-                     className="scale-120 absolute left-0 top-[-100px] mb-5 w-1/3 -rotate-12 transform rounded-lg shadow-lg"
+                     className="scale-120 absolute xl:left-0 xl:top-[-100px] top-[-40px] -left-12  mb-5 w-1/3 -rotate-12 transform rounded-lg shadow-lg"
                   />
                   {/* Top Right Image */}
                   <img
@@ -32,14 +35,24 @@ const Collage = ({bgColor}) => {
                   <img
                      src="/images/about-us-4.jpg"
                      alt="About Us"
-                     className="absolute left-[-20px] top-[350px] mb-5 w-2/5 rotate-3 scale-110 transform rounded-lg shadow-lg"
+                     className="absolute left-[-20px] xl:top-[350px] top-[350px] lg:top-[450px] mb-5 w-2/5 rotate-3 scale-110 transform rounded-lg shadow-lg"
                   />
                </div>
+
                <div className="px-4 pb-10  xl:w-1/2 md:p-5 xl:relative">
-                  <p className="mb-10 pt-10 text-center text-5xl font-bold text-take_care_primary">
+                  <p className="lg:mb-10 mb-3 pt-10 text-center text-5xl font-bold text-take_care_primary">
                      About Us
                   </p>
-                  <p className="text-lg md:mt-28 lg:mt-5">
+                  {/* Small image for mobile viewers */}
+                  <div className=" sm:hidden flex relative flex-wrap  p-5 xl:hidden w-full">
+                     <img
+                        src="/images/about-us.jpg"
+                        alt="About Us"
+                        className="mb-5 rounded-lg shadow-lg"
+                     />
+                     
+                  </div>
+                  <p className="text-lg  lg:mt-5">
                      <span className="font-semibold text-take_care_primary">
                         Take Care
                      </span>{" "}
