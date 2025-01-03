@@ -2,12 +2,12 @@ import React from "react";
 
 const Contact = () => {
    return (
-      <div className="md:grid md:grid-cols-2 mx-auto container px-4 py-10">
-         <div className="md:block hidden">
+      <div className="md:grid md:grid-cols-2 px-10 py-20">
+         <div className="md:block hidden bg-red-100 ">
             <img
                src="/images/Home(3).jpg"
                alt="Healthcare"
-               className="rounded-lg shadow-lg w-full h-auto object-cover xl:max-w-[700px] lg:max-w-[500px]"
+               className="rounded-lg w-full xl:h-[700px] h-full object-cover "
             />
          </div>
          <div>
