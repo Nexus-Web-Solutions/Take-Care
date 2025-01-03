@@ -8,7 +8,7 @@ const About = () => {
   return (
     <div>
       <Collage />
-      <OurTeam />
+      {/* <OurTeam /> */}
       <Gallery />
     </div>
   );
