@@ -1,9 +1,11 @@
+import { getCurrentYear } from "@/lib/utils";
 import { Facebook, Instagram, Mail } from "lucide-react";
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-blue-900 to-black py-6 text-white">
+    <footer className="bg-white">
       <div className="container mx-auto px-4">
         {/* Top Section */}
         <div className="grid grid-cols-1 gap-4 text-center md:grid-cols-3 md:text-left">
@@ -14,7 +16,7 @@ const Footer = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec risus
               feugiat lectus risus sed ullamcorper. Auctor semper fermentum.
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec risus
-              feugiat lectus risus sed ullamcorper. Auctor semper fermentum
+              feugiat lectus risus sed ullamcorper. Auctor semper fermentum.
             </p>
             <p className="text-sm">
               Volutpat integer vel. In rhoncus elementum nunc, malesuada mi sed.
@@ -53,10 +55,56 @@ const Footer = () => {
           </div>
         </div>
 
+        {/* Center-Aligned Navigation Links */}
+        <div className="mt-4 flex flex-wrap justify-center space-x-6 text-sm">
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              `hover:text-take_care_primary ${
+                isActive && "text-take_care_primary"
+              }`
+            }
+          >
+            Home
+          </NavLink>
+          <NavLink
+            to="/about-us"
+            className={({ isActive }) =>
+              `hover:text-take_care_primary ${
+                isActive && "text-take_care_primary"
+              }`
+            }
+          >
+            About Us
+          </NavLink>
+          <NavLink
+            to="/services"
+            className={({ isActive }) =>
+              `hover:text-take_care_primary ${
+                isActive && "text-take_care_primary"
+              }`
+            }
+          >
+            Services
+          </NavLink>
+          <NavLink
+            to="/careers"
+            className={({ isActive }) =>
+              `hover:text-take_care_primary ${
+                isActive && "text-take_care_primary"
+              }`
+            }
+          >
+            Careers
+          </NavLink>
+        </div>
+
         {/* Bottom Section */}
-        <div className="mt-6 flex flex-col items-center justify-between border-t-2 border-gray-100 pt-4 text-sm md:flex-row">
+        <div className="mt-6 flex flex-col items-center justify-between border-t-2 border-gray-200 pt-4 text-sm md:flex-row">
           {/* Left: Copyright */}
-          <p>Humeny © 2024. All rights reserved.</p>
+          <p className="text-center md:text-left">
+            Humeny © {getCurrentYear()}. All rights reserved.
+          </p>
 
           {/* Right: Links */}
           <div className="mt-2 flex space-x-4 md:mt-0">

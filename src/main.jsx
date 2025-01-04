@@ -19,6 +19,8 @@ const router = createBrowserRouter([
       <div>
         <Navbar />
         <Homepage />
+        <Footer />
+
       </div>
     ),
   },
@@ -28,6 +30,8 @@ const router = createBrowserRouter([
       <div>
         <Navbar />
         <About />
+        <Footer />
+
       </div>
     ),
   },
@@ -37,6 +41,8 @@ const router = createBrowserRouter([
       <div>
         <Navbar />
         <Careers />
+        <Footer />
+
       </div>
     ),
   },
@@ -46,6 +52,7 @@ const router = createBrowserRouter([
       <div>
         <Navbar />
         <Services />
+        <Footer />
       </div>
     ),
   },
@@ -54,6 +61,5 @@ const router = createBrowserRouter([
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <RouterProvider router={router} />
-    <Footer />
   </StrictMode>,
 );
