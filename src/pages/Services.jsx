@@ -1,5 +1,4 @@
 import ServicesInView from "@/components/pages/services/ServicesInView";
-import { InView } from "@/components/ui/in-view";
 
 const Services = () => {
   return (
