@@ -20,9 +20,9 @@ const HeroSection = () => {
             services and reach out to us anytime!
           </p>
           <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row lg:justify-start">
-            <button className="rounded-md bg-blue-600 px-8 py-5 text-base text-white shadow-lg hover:bg-blue-700 sm:px-8 sm:py-4 sm:text-lg">
+            {/* <button className="rounded-md bg-blue-600 px-8 py-5 text-base text-white shadow-lg hover:bg-blue-700 sm:px-8 sm:py-4 sm:text-lg">
               Book a Meeting
-            </button>
+            </button> */}
             {/* <button className="bg-gray-200 text-gray-800 px-8 py-5 sm:px-8 sm:py-4 text-base sm:text-lg rounded-md shadow-lg hover:bg-gray-300">
               Read More
             </button> */}
