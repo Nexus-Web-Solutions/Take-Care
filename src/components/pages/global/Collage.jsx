@@ -49,23 +49,18 @@ const Collage = ({ bgColor }) => {
                 src="/images/about-us.jpg"
                 alt="About Us"
                 className="mb-5 rounded-lg shadow-lg"
-              />
+              />  
             </div>
             <p className="text-lg lg:mt-5">
               <span className="font-semibold text-take_care_primary">
-                Take Care
+              Humey Home  Nursing Service
               </span>{" "}
               is a home care agency that provides compassionate care for your
               loved ones. We provide personalized care plans tailored to meet
               the unique needs of each individual.
             </p>
             <p className="mt-5 text-lg">
-              Our team of experienced caregivers is dedicated to ensuring the
-              highest quality of care, promoting independence, and enhancing the
-              quality of life for our clients. We offer a range of services
-              including personal care, companionship, and specialized care for
-              individuals with chronic conditions. At Humeny, we believe in
-              treating each client with dignity, respect, and compassion.
+            At HUMENY HOME NURSING SERVICE, we bring 18 years of trusted experience in delivering compassionate and professional home healthcare. Our highly trained team of nurses is dedicated to providing personalized care tailored to each client's unique needs, whether it's post-operative recovery, elderly assistance, or chronic illness management. With 24/7 availability, a commitment to quality, and a focus on building meaningful relationships, we ensure comfort, safety, and peace of mind for you and your loved ones, all from the comfort of home.
             </p>
           </div>
         </div>

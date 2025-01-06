@@ -15,7 +15,7 @@ const Card = ({ title, description, duration, imageUrl }) => (
     <div className="p-4">
       <h3 className="text-lg font-bold text-gray-800 lg:text-2xl">{title}</h3>
       <p className="mt-2 text-sm text-gray-600 lg:text-xl">{description}</p>
-      <p className="mt-1 text-sm text-gray-500 lg:text-xl">{duration}</p>
+
     </div>
   </div>
 );
@@ -28,31 +28,31 @@ const HomeNursingServices = () => {
 
   const services = [
     {
-      title: "24/7 Skilled Nursing Care",
+      title: "Pregnancy and Delivery Care",
       description:
-        "Around-the-clock professional nursing care to meet your medical needs.",
-      duration: "Available anytime",
+        "Experience compassionate, professional support throughout pregnancy and postpartum. Our expert nurses ensure the health, safety, and comfort of both mother and baby, 24/7.",
+      
       imageUrl: "/images/Service (1).png", // Corrected path to public folder
     },
     {
-      title: "Post-Surgery Recovery",
+      title: "Elderly Care & Housekeeping",
       description:
-        "Comprehensive care to help you recover comfortably at home.",
-      duration: "Custom recovery plans",
+        "Providing compassionate senior care and professional housekeeping to ensure comfort, dignity, and a safe, organized home.",
+     
       imageUrl: "/images/Service (1).png",
     },
     {
       title: "Elderly Care Assistance",
       description:
         "Dedicated support to enhance the quality of life for seniors.",
-      duration: "Flexible schedules",
+     
       imageUrl: "/images/Service (1).png",
     },
     {
       title: "Physical Therapy at Home",
       description:
         "Personalized therapy sessions to regain strength and mobility.",
-      duration: "Sessions by appointment",
+     
       imageUrl: "/images/Service (1).png",
     },
   ];

@@ -20,7 +20,12 @@ const Navbar = () => {
     <nav className="mx-10 bg-white py-4 font-semibold">
       <div className="flex items-center justify-between">
         <div className="text-xl font-bold text-take_care_primary">
-          Take Care
+        <img
+            src="/images/logo.jpg"
+            alt="Take Care Logo"
+            className="h-12 cursor-pointer"
+            onClick={() => navigate("/")}
+          />
         </div>
         <div className="hidden space-x-10 md:flex">
           <NavLink
